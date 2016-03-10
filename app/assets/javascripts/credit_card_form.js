@@ -11,7 +11,7 @@ $form.find("input[type=submit]").prop("disabled", true);
 if(Stripe){
 Stripe.card.createToken($form, stripeResponseHandler);
 } else {
-show_error("Failed to load credit card processing functionality. Please reload this page in your browser.")
+show_error("Failed to load credit card processing functionality. Please reload this page in your browser.");
 }
 return false;
 };
@@ -41,7 +41,7 @@ return false;
 
 show_error = function (message) {
 if($("#flash-messages").size() < 1){
-$('div.container.main div:first').prepend("<div id='flash-messages'></div>")
+$('div.container.main div:first').prepend("<div id='flash-messages'></div>");
 }
 
 
